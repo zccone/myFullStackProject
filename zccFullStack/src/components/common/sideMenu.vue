@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar":style="{ height: this.$store.state.bodyHeight + 'px' }">
+    <div class="sidebar">
         <el-menu class="sidebar-el-menu" :default-active="onRoutes" :collapse="collapse" unique-opened router collapse-transition>
 
             <template v-for="item in items"v-cloak >

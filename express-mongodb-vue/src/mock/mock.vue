@@ -45,23 +45,5 @@
 }
 </script>
 
-<style scoped>
-.detail{
-    width: 80%;
-    margin: 50px auto;
-}
-.imgClass{
-    width: 100%;
-}
-.heroName{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-}
-.goback{
-    margin-bottom: 30px;
-}
-</style>
 
 

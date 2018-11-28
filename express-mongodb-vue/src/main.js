@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueResource from 'vue-resource'
-
 //引入element组件化框架
 import ElementUI from "element-ui"
 //引入样式文件

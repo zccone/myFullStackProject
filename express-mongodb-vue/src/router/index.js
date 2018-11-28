@@ -6,7 +6,6 @@ import List from '@/components/List'
 import Detail from '@/components/Detail'
 import mock from '@/mock/mock'
 
-
 Vue.use(Router)
 
 export default new Router({
@@ -26,5 +25,6 @@ export default new Router({
       name : 'mock',
       component : mock
     },
+
   ]
 })

@@ -4,7 +4,7 @@ import checkboxTable from '@/components/page/checkboxTable/index.vue';
 import main from '@/components/page/index.vue';
 import login from '@/components/page/Login.vue';
 import error from '@/components/page/404.vue';
-
+import mock from '@/components/page/mock/mock'
 
 Vue.use(Router);
 //去缓存里面拿一个菜单
@@ -26,6 +26,11 @@ export default new Router(
             component: resolve => require(['../components/page/checkboxTable/index.vue'], resolve),
             meta: {title: '多选表格'},
           },
+          {
+            path : '/mock',
+            name : 'mock',
+            component : mock
+          },
         ],
       },
       {
@@ -36,5 +41,6 @@ export default new Router(
         path: '/404',
         name: 'error', component: error,
       },
+
     ]
   })

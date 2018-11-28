@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-sidebar  ></v-sidebar>
-        <div class="content" >
+        <div class="content" :style="{height: (this.$store.state.bodyHeight-20) + 'px',overflow:'auto'}">
             <transition name="move" mode="out-in">
                 <!-- <keep-alive>-->
                 <router-view></router-view>
