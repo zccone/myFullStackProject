@@ -325,7 +325,7 @@ console.log(addObj)
     // 获取全部数据
     getAll: function() {
       this.loading = true;
-      this.$http.get("http://127.0.0.1:8080/api/hero").then(
+      this.$http.get("http://127.0.0.1:8090/api/hero").then(
         function(response) {
           console.log(response)
           this.loading = false;
