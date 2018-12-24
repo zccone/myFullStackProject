@@ -13,7 +13,8 @@ promise.polyfill();
 Vue.config.productionTip = false
 //引入vuex
 import store from './store'
-
+//引入全局静态变量
+import  './utils/global.js'
 Vue.use(ElementUI);
 Vue.use(VueResource)
 Vue.prototype.$axios = axios;

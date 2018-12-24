@@ -324,7 +324,7 @@ export default {
     // 获取全部数据
     getAll: function() {
       this.loading = true;
-      this.$get("http://127.0.0.1:8080/api/hero").then((response) => {
+      this.$get(global.HERO).then((response) => {
         console.log("tableData", response);
         this.loading = false;
         this.tableData = response;

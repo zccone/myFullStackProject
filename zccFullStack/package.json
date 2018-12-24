@@ -16,6 +16,7 @@
     "element-ui": "^2.2.1",
     "es6-promise": "^4.2.4",
     "express": "^4.16.2",
+    "mint-ui": "^2.2.13",
     "mockjs": "^1.0.1-beta3",
     "mongoose": "^5.0.10",
     "nodemon": "^1.17.1",

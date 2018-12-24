@@ -1,10 +1,8 @@
 let urlhttp = "http://";
 
-let domain = "10.78.57.85:9000/";
+let domain = "127.0.0.1:8090/";
 //项目后台发布名称
-let Backstage = "api/services/EERP/";
-
-
+let Backstage = "api/";
 //服务器域名
 let host = domain + Backstage;
 export default {
@@ -12,8 +10,21 @@ export default {
         return httpurl.url;
     },
 };
-//登录
-global.LOGINBYAD = urlhttp + host + "User/LoginByAd";
+global.HERO = urlhttp + host + "hero";
 
-//获得供应商列表
-global.COMMONGETVENDORLIST = urlhttp + host + "Common/GetVendorList";
+global.SIDEMENU = urlhttp + host + "sideMenu";
+
+global.HEROLIST = urlhttp + host + "heroList";
+
+global.POSTHERO = urlhttp + host + "hero";
+global.DELETEHERO = urlhttp + host + "hero";
+global.EIDTHERO = urlhttp + host + "hero";
+
+
+
+
+
+
+
+
+

@@ -5,6 +5,7 @@
   right: 0;
   top: 0px;
   bottom: 0;
+  background: #fff;
 }
 .inputWidth .el-input__inner{
   width: 300px;

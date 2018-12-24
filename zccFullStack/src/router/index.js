@@ -22,6 +22,21 @@ export default new Router(
         name: 'main', component: main,
         children: [
           {
+            path: '/inputDisabled',
+            component: resolve => require(['../components/page/input/index.vue'], resolve),
+            meta: {title: '禁止输入'},
+          },
+          {
+            path: '/indexSelect',
+            component: resolve => require(['../components/page/input/indexSelect.vue'], resolve),
+            meta: {title: 'select联动'},
+          },
+          {
+            path: '/loadMoreUp',
+            component: resolve => require(['../components/page/loadMore/loadMoreUp.vue'], resolve),
+            meta: {title: '下拉刷新'},
+          },
+          {
             path: '/checkboxTable',
             component: resolve => require(['../components/page/checkboxTable/index.vue'], resolve),
             meta: {title: '多选表格'},

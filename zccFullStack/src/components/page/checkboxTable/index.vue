@@ -61,7 +61,7 @@
       },
 //请求基础表格数据
       getTableData(msg) {
-        this.$post("http://127.0.0.1:8080/api/heroList", {
+        this.$post(global.HEROLIST, {
           "page": this.tableData.fenye.pageIndex,
           "rows": this.tableData.fenye.pageSize
         }).then((response) => {
@@ -88,7 +88,7 @@
       },
       //新建条目
       createInfor(details) {
-        this.$post("http://127.0.0.1:8080/api/hero", details, {
+        this.$post(POSTHERO, details, {
           emulateJSON: true
         }).then((response) => {
           if (response.code === 'success') {
@@ -110,7 +110,7 @@
 //删除条目
       deleteline(details) {
         console.log(details, details._id);
-        this.$Delete("http://127.0.0.1:8080/api/hero/" + details._id).then((response) => {
+        this.$Delete(DELETEHERO + details._id).then((response) => {
           if (response.code === 'success') {
             this.$message({message: '删除成功', type: 'success'});
             this.tableData.dialogTableVisible = false;
@@ -125,7 +125,7 @@
       //修改条目
       editline(details) {
         console.log(details, details._id);
-        this.$put("http://127.0.0.1:8080/api/hero/" + details._id, details,).then((response) => {
+        this.$put(EIDTHERO + details._id, details,).then((response) => {
           if (response.code === 'success') {
             this.$message({message: '修改成功', type: 'success'});
             this.tableData.dialogTableVisible = false;
