@@ -51,7 +51,7 @@
       }
     },
     mounted() {
-      this.getmenu();
+      // this.getmenu();
     },
     methods: {
       getmenu: function () {
